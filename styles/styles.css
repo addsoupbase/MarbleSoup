@@ -1,0 +1,21 @@
+@import url(./animations.css);
+#canvas {
+    background-color: rgb(133, 161, 112);
+    position: fixed;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
