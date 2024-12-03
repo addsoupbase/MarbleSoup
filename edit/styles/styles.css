@@ -1,0 +1,99 @@
+@import url(../../global.css);
+
+iframe {
+    border-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    height: 85%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+body,html {
+    padding: 0px;
+    margin: 0;
+    background-color: rgb(80, 80, 80);
+}
+#leftmenu {
+    border-width:5px;
+    border-style:solid;
+    border-color:rgb(115, 115, 115);
+    border-radius: 5px;
+    background-color: grey;
+    text-align: center;
+    position: fixed;
+    width:300px;
+    height: calc(100vh - 10px);
+}
+.green {
+    background-color: #28a745;
+    border-color: #007bff;
+    border-width:2px;
+    border-style: solid;
+}
+#leftmenubutton {
+    position: absolute;
+    left:100%;
+    top:calc(50% - 60px);
+    width:20px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    font-family: mono;
+    display: grid;
+    align-items: center;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input.write {
+    width: 80%;
+
+}
+#leftstats {
+    display: inline-block;
+}
+.topsettings{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    left:calc(50% - 30px);
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    padding:5px;
+    vertical-align: middle;
+    align-content: center;
+    width: 60px;
+    cursor: pointer;
+}
+.topsettings:hover {
+    background-color: #21903b;}
+input.color {
+    width:80%;
+    height: 30px;
+}
+.ui {
+    background-image: url(../media/button\ UI.png);
+    background-repeat: no-repeat;
+    background-size: 192px 192px;
+    background-clip: content-box;
+    width:16px;
+    height:16px;
+    image-rendering:crisp-edges;
+    transform: scale(1.6,1.6);
+}
+.arrow {
+    background-position: -16px 0px;
+}

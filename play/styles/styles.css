@@ -1,7 +1,9 @@
 @import url(./animations.css);
+@import url(../../global.css);
 #canvas {
     background-color: rgb(133, 161, 112);
     position: fixed;
+    pointer-events: none;
 }
 body {
     margin: 0;
@@ -13,9 +15,9 @@ body {
     min-height: 100vh;
     min-width: 100vw;
 }
-.center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+#startbutton {
+    width: 250px;
+    height: 100px;
+    font-size: 250%;
 }

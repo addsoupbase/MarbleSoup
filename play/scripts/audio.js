@@ -2,15 +2,15 @@ local.volume ??= 0.5 //Default value
 const sfx = new Map, music = new Set
 const sources = {
     sfx: new Set('click.mp3 confirm.mp3 pop.mp3'.split(' ').map(
-        src => '../media/sfx/' + src
+        src => './media/sfx/' + src
     )),
     music: new Set('beach.mp3 flowers.mp3 freshair.mp3 garden.mp3 leaves.mp3 love.mp3 peach.mp3 rainbow.mp3 spring.mp3'.split(' ').map(
-        src => '../media/music/' + src
+        src => './media/music/' + src
     ))
 }
 const audio = {
     play(filename) {
-        const file = '../media/sfx/' + filename
+        const file = './media/sfx/' + filename
         if (sfx.has(file)) {
             const toplay = sfx.get(file)
             return toplay.play()
